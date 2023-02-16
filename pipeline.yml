@@ -1,0 +1,25 @@
+{
+  "spec": {
+    "name": "web-app",
+    "region": "nyc",
+    "services": [
+      {
+        "name": "api",
+        "github": {
+          "branch": "master",
+          "deploy_on_push": true,
+          "repo": "vamshikrishnakalleti/aspdotnet"
+        },
+        "run_command": "dotnet run",
+        "environment_slug": "aspdotnet",
+        "instance_count": 2,
+        "instance_size_slug": "basic-xxs",
+        "routes": [
+          {
+            "path": "/api"
+          }
+        ]
+      }
+    ]
+  }
+}
