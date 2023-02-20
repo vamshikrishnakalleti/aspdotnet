@@ -16,7 +16,7 @@ spec:
 			- name: acr-secret
 			containers:
 			- name: catalog-conatainer 
-			  image: catalogservice20221201152530.azurecr.io/catalogservice:latest
+			  image: vamshikrishnak/catalogservice:latest
 			  imagePullPolicy: Always
 			  resources:
 			  env: 
